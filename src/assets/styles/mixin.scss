@@ -1,0 +1,9 @@
+@mixin multiline-elipsis ($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  line-clamp: $line;
+  -moz-line-clamp: $line;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+}

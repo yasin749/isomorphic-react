@@ -1,0 +1,34 @@
+@import '../../../../assets/styles/import';
+
+.root {
+  .inner {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 4px;
+  }
+
+  .image {
+    min-height: 196px;
+    object-fit: cover;
+  }
+
+  .content {
+    padding: 15px 15px;
+
+    .title {
+      font-size: 19px;
+      margin: 0 0 10px 0;
+      height: 22px;
+      overflow: hidden;
+
+      @include multiline-elipsis(1);
+    }
+
+    .description {
+      line-height: 1.3;
+      height: 72px;
+      overflow: hidden;
+
+      @include multiline-elipsis(4);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Compiled output
+build
+
+# Runtime data
+database.sqlite
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editors and IDEs
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Misc
+.DS_Store
+
+src/universal/components/**/*.css
+#src/universal/assets.json
+src/universal/loadable-stats.json
