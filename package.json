@@ -84,7 +84,7 @@
     "bundle": "node src/tools/run bundle --publish",
     "bundle:client": "webpack-cli --config webpack.client.config.js --colors --bail",
     "bundle:server": "webpack-cli --config webpack.server.config.js --colors --bail",
-    "serve": "yarn run bundle && node --max-http-header-size=20480 build/server/server.js",
+    "serve": "yarn run bundle && node build/server/server.js",
     "start": "node --inspect src/tools/run start "
   }
 }
