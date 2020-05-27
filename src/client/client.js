@@ -8,7 +8,7 @@ import App from '../universal/components/App';
 
 import '../assets/styles/application.scss';
 
-let initialState;
+let initialState = {};
 if (window.__INITIAL_STATE__) {
     initialState = JSON.parse(window.__INITIAL_STATE__);
     delete window.__INITIAL_STATE__;
