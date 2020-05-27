@@ -7,7 +7,6 @@ import s from './MainLayout.scss';
 class MainLayout extends Component {
     static propTypes = {
         className: PropTypes.string,
-        location: PropTypes.object,
         children: PropTypes.any,
     };
 

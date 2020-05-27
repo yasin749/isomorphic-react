@@ -6,11 +6,11 @@ import {hot} from 'react-hot-loader';
 
 import {renderRoutes} from '../routes/routes';
 
-import MainLayout from '../layouts/MainLayout/MainLayout';
-
 class App extends PureComponent {
     static propTypes = {
         initialState: PropTypes.object,
+        location: PropTypes.any,
+        history: PropTypes.any,
     };
 
     constructor(props) {
@@ -28,21 +28,12 @@ class App extends PureComponent {
     }
 
     render() {
-        const {
-            location,
-            history,
-        } = this.props;
-
         return (
-            <MainLayout
-                history={history}
-                location={location}>
-                <Switch>
-                    {
-                        renderRoutes(this.generateRoutingProps())
-                    }
-                </Switch>
-            </MainLayout>
+            <Switch>
+                {
+                    renderRoutes(this.generateRoutingProps())
+                }
+            </Switch>
         );
     }
 }

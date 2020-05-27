@@ -4,6 +4,7 @@ import {resolve} from '../../common/async/promiseUtils';
 
 import {getAllBlogs} from '../../services/blog/blogService';
 
+import MainLayout from '../../layouts/MainLayout/MainLayout';
 import BlogBoxList from '../../components/Blog/Box/List/BlogBoxList';
 
 import s from './home-page.scss';
@@ -54,11 +55,11 @@ class HomePage extends PureComponent {
         } = this.state;
 
         return (
-            <div className={s.root}>
+            <MainLayout className={s.root}>
                 <h1>My Blog</h1>
                 <BlogBoxList
                     blogs={blogs}/>
-            </div>
+            </MainLayout>
         );
     }
 }
