@@ -57,6 +57,8 @@ const serverRenderer = async (req, res, next) => {
                 initialState = await RouteComponent.fetchData(context);
             }
 
+            // console.log('initialState', initialState);
+
             const Application = () => (
                 <StaticRouter
                     location={req.url}
@@ -76,6 +78,8 @@ const serverRenderer = async (req, res, next) => {
             const jsx = extractor.collectChunks(<Application/>);
 
             const bodyHtml = ReactDOMServer.renderToString(jsx);
+
+            // console.log('bodyHtml', bodyHtml);
 
             const htmlString = html({
                 ...baseHtmlProps,

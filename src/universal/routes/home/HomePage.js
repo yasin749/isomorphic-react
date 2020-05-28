@@ -26,11 +26,17 @@ class HomePage extends PureComponent {
     constructor(props) {
         super(props);
 
+        /*
         const {initialState} = props;
 
         this.state = {
             blogs: initialState && initialState.blogs,
         };
+         */
+
+        this.state = {
+            blog: [],
+        }
     }
 
     componentDidMount() {

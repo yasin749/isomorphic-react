@@ -17,8 +17,7 @@ if (window.__INITIAL_STATE__) {
 const container = document.getElementById('container');
 
 loadableReady(() => {
-    //ReactDOM.hydrate(
-    ReactDOM.render(
+    ReactDOM.hydrate(
         <BrowserRouter>
             <Route
                 path='/'

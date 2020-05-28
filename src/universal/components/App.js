@@ -18,13 +18,14 @@ class App extends PureComponent {
     }
 
     generateRoutingProps() {
-        const {
+        /*const {
             initialState,
         } = this.props;
 
         return {
             initialState,
-        };
+        };*/
+        return null;
     }
 
     render() {
