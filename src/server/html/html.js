@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 
 function generateInitialStateString(initialState) {
-    return `window.__INITIAL_STATE__ = JSON.stringify(${JSON.stringify(initialState)});`;
+    // return `window.__INITIAL_STATE__ = JSON.stringify(${JSON.stringify(initialState)});`;
+    return null;
 }
 
 function conditionalRender(condition, ok, cancel) {
@@ -55,7 +56,7 @@ function html(props) {
             ${style.cssText}
         </style>
       `) : ''}
-
+      
       ${conditionalRender(initialState, `
         <script>
           ${generateInitialStateString(initialState)}
