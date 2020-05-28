@@ -7,7 +7,9 @@ function getAllBlogs() {
     /* Failover
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(blogs);
+            resolve({
+                data: blogs,
+            });
         }, 300);
     })*/
 }
