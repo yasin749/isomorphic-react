@@ -11,7 +11,7 @@ import s from './home-page.scss';
 
 class HomePage extends PureComponent {
 
-    static async fetchData() {
+    /*static async fetchData() {
         let serverData = {};
 
         await resolve(
@@ -21,7 +21,7 @@ class HomePage extends PureComponent {
         );
 
         return serverData;
-    }
+    }*/
 
     constructor(props) {
         super(props);
@@ -34,19 +34,19 @@ class HomePage extends PureComponent {
     }
 
     componentDidMount() {
-        const {
+        /*const {
             blogs,
-        } = this.state;
+        } = this.state;*/
 
-        if (!blogs) {
-            resolve(
-                getAllBlogs().then((data) => {
-                    this.setState({
-                        blogs: data.data,
-                    })
+        //if (!blogs) {
+        resolve(
+            getAllBlogs().then((data) => {
+                this.setState({
+                    blogs: data.data,
                 })
-            );
-        }
+            })
+        );
+        //}
     }
 
     render() {
