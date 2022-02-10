@@ -62,7 +62,7 @@
     "get-port": "4.0.0",
     "identity-obj-proxy": "3.0.0",
     "mini-css-extract-plugin": "0.4.4",
-    "node-sass": "4.11.0",
+    "node-sass": "7.0.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pixrem": "4.0.1",
     "pleeease-filters": "4.0.0",
