@@ -20,7 +20,7 @@
     "clean-webpack-plugin": "1.0.0",
     "compose-middleware": "5.0.0",
     "compression": "1.7.3",
-    "express": "4.16.4",
+    "express": "4.17.3",
     "history": "4.7.2",
     "immutable": "4.0.0-rc.12",
     "js-cookie": "2.2.0",
